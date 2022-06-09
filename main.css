@@ -8,18 +8,38 @@
     margin: 0;
 }
 
-/* Titre Principal*/
+.flex_logo {
 
+    display: flex;
+    align-items: center;
+    /* left: 0;
+    height: 0; */
+    
+}
+
+
+.image_logo {
+    margin: 0;
+    padding: 0;
+}
+
+.background_corps {
+    background-color: cadetblue;    
+    text-align: center;
+    /* margin-top: 1.5cm; */
+    }
+
+    /* Titre Principal*/
 .titre_portfolio {
     font-size: 80px;
     font-weight: 700px;
     color: midnightblue;
-    text-align: center;
-    margin: auto;
-   padding-top: 4%;
+    /* margin: auto;  */
+    margin-left: 25%;
    font-family: "Patua One", fantaisy;
    letter-spacing: 5px;
    box-shadow: mediumpurple;
+   
 }
 
 .image_fond {    
@@ -32,31 +52,50 @@
         opacity: 94%;
 }
 
-.background_corps {
-background-color: cadetblue;    
-margin-top: 1.5cm;
-}
 
 .button2 {
     display:flex;
-    justify-content: center;
+    /* justify-content: center; */
     background-color: blue;
     position: absolute;
     /* border-radius: 50%; */
     color: white;
-    padding: 20px 34px;
+    /* padding: 20px 34px; */
+    /* margin: 10px 30px; */
     text-align: center;
-    margin-bottom: 4px;
+    /* margin-bottom: 4px; */
     text-decoration: none;
     font-size: 20px;
     font-weight: 900; 
     font-family: "Patua One";
     letter-spacing: 2px;
-    margin: 4px 2px;
+    margin: 40px 2.7px;
     cursor: pointer;
 }
 
 div.button2 {
     padding-top: 1000px;
      
+}
+
+.container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    transform: translateY(200px);
+}
+.txt {
+    white-space: nowrap;
+    animation: scrollTxt 2s linear infinite;
+
+}
+
+@keyframes scrollTxt {
+    0%{
+        transform: translate(0, 0);
+    }
+100% {
+    transform: translate(-100%, 0);
+}
 }
